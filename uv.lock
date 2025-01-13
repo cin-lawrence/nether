@@ -504,7 +504,7 @@ wheels = [
 
 [[package]]
 name = "nether"
-version = "0.0.5+dirty"
+version = "0.1.0.dev1+g5a7bf49"
 source = { editable = "." }
 dependencies = [
     { name = "aiofiles" },
