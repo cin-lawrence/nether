@@ -47,13 +47,13 @@ dirty = "{version}+dirty"
 distance-dirty = "{next_version}.dev{distance}+{vcs}{rev}.dirty"
 
 [tool.hatch.build]
-artifacts = ["mini/_version.py"]
+artifacts = ["nether/_version.py"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["mini"]
+packages = ["nether"]
 
 [tool.hatch.build.targets.sdist]
-only-include = ["mini"]
+only-include = ["nether"]
 
 [tool.ruff]
 line-length = 79
