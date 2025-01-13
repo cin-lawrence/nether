@@ -12,7 +12,7 @@ repos:
         args:
           - --maxkb=1000
   - repo: https://github.com/adrienverge/yamllint.git
-    rev: v1.26.3
+    rev: v1.35.1
     hooks:
       - id: yamllint
         name: yamllint
@@ -23,7 +23,7 @@ repos:
         args:
           - --strict
   - repo: https://github.com/lyz-code/yamlfix.git
-    rev: 1.16.1
+    rev: 1.17.0
     hooks:
       - id: yamlfix
         entry: env YAMLFIX_SEQUENCE_STYLE=block_style yamlfix
@@ -34,7 +34,7 @@ repos:
         args:
           - --ignore-words-list=NIN,braket
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.42.0
+    rev: v0.43.0
     hooks:
       - id: markdownlint
         name: markdownlint-fix
@@ -52,10 +52,10 @@ repos:
   #     - id: taplo-format
   #     - id: taplo-lint
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.12.1
+    rev: v1.14.1
     hooks:
       - id: mypy
-        files: ^(arms/|tests/)
+        files: ^(nether/|tests/)
         additional_dependencies:
           - pip>=23.2.1
           - pydantic>=2.6.3
@@ -64,7 +64,7 @@ repos:
           - types-requests
           - google-api-python-client-stubs
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.7.0
+    rev: v0.9.1
     hooks:
       - id: ruff
         args:
