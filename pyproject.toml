@@ -30,7 +30,7 @@ dev = [
     "google-api-python-client-stubs>=1.28.0",
     "mypy>=1.14.1",
     "pdm>=2.22.2",
-    "pre-commit>=4.0.1",
+    "pre-commit>=4.5.1",
     "ruff>=0.9.1",
 ]
 
